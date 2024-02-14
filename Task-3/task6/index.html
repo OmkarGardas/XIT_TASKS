@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Tell us</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">
+            Tell us about your home.
+        </h1>
+        <p><span class="highlight">Address </span>YOUR INFORMATION IS PRIVATE</p>
+        <form>
+            <div class="address">
+                <label for="address">Address</label>
+                <input type="text" placeholder="Enter an address">
+            </div>
+            <div class="address2">
+                <label for="address2">Address 2</label>
+                <input type="text" placeholder="Apt Number">
+            </div>
+            <div class="city__info">
+                <div>
+                    <label for="city">City</label>
+                    <input type="text" placeholder="city" id="city">
+                </div>
+                <div>
+                    <label for="state">State</label>
+                    <input type="text" placeholder="state" id="state">
+                </div>
+                <div>
+                    <label for="pincode">Zip Code</label>
+                    <input type="text" placeholder="zip code" id="zipcode">
+                </div>
+            </div>
+            <div class = "hr"><hr/></div>
+            <p><span class="highlight">Bed & Bath</span> WHAT IS YOUR HOME LIKE?</p>
+            <div class="grid__container">
+                <div class="item1">
+                    <label for="homeType">Home Type</label>
+                    <select name="homeType" id="home__type">
+                        <option value="house">House</option>
+                    </select>
+                </div>
+                <div class="item2">
+                    <label for="roomType">Room Type</label>
+                    <select name="roomType" id="room__type">
+                        <option value="house">Entire house/apt</option>
+                    </select>
+                </div>
+                <div class="item3">
+                    <label for="bedrooms">Bedrooms</label>
+                    <select name="bedrooms" id="bedrooms">
+                        <option value="bedrooms">1 bedroom</option>
+                    </select>
+                </div>
+                <div class="item4">
+                    <label for="bathrooms">Bathrooms</label>
+                    <select name="bathrooms" id="bathrooms">
+                        <option value="bathrooms">1 bathroom</option>
+                    </select>
+                </div>
+            </div>
+            <div class="grid__container2">
+                <div class="col1">
+                    <label for="king">King</label>
+                    <select name="king" id="king">
+                        <option value="zero">0</option>
+                        <option value="one">1</option>
+                    </select>
+                </div>
+                <div class="col2">
+                    <label for="queen">Queen</label>
+                    <select name="queen" id="queen">
+                        <option value="zero">0</option>
+                        <option value="one">1</option>
+                    </select>
+                </div>
+                <div class="col3">
+                    <label for="full">Full</label>
+                    <select name="full" id="full">
+                        <option value="zero">0</option>
+                        <option value="one">1</option>
+                    </select>
+                </div>
+                <div class="col4">
+                    <label for="twin">Twin</label>
+                    <select name="twin" id="twin">
+                        <option value="zero">0</option>
+                        <option value="one">1</option>
+                    </select>
+                </div>
+            </div>
+            <button class="button">Sign me up!</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <div class="card">
+        <div class="container">
+            <h1 style="font-weight: normal;">Contact us</h1>
+            <p>Want to advertise on Tumblr? Great, you're in the right place. We just need to know a little more about
+                you'</p>
+            <form>
+                <div class="grid_container">
+                    <div class="item1">
+                        <label for="firstName">* First Name:</label>
+                        <input type="text" id="firstName" required class="input">
+                    </div>
+                    <div class="item2">
+                        <label for="lastName">* Last Name:</label>
+                        <input type="text" id="lastName" required class="input">
+                    </div>
+                    <div class="item3">
+                        <label for="company">* Company:</label>
+                        <input type="text" id="company" required class="input">
+                    </div>
+                    <div class="item4">
+                        <label for="firstName">* Country:</label>
+                        <select name="country" id="country_select" class="input">
+                            <option value="india">India</option>
+                            <option value="italy">Italy</option>
+                            <option value="israel">Israel</option>
+                            <option value="canada">Canada</option>
+                        </select>
+                    </div>
+                    <div class="item5">
+                        <label for="email">* Email:</label>
+                        <input type="text" id="email" required class="input">
+                    </div>
+                    <div class="item6">
+                        <label for="phoneNum">Phone Number:</label>
+                        <input type="text" id="phoneNum" required class="input">
+                    </div>
+                    <div class="item7">
+                        <label for="tumblr_url">Tumblr URL:</label>
+                        <input type="text" id="Tumblr-url" required class="input">
+                    </div>
+                    <div class="item8">
+                        <label for="website_url">Website URL:</label>
+                        <input type="text" id="website_url" required class="input">
+                    </div>
+                </div>
+                <div class="budget">
+                    <p>What is Your Monthly Advertising Budget?</p>
+                    <select name="selection" id="budget_selection" required class="input">
+                        <option value="select">Select..</option>
+                    </select>
+                </div>
+
+                <div class="checkBox">
+                    <p>What can we help you with?</p>
+                    <div class="grid_container2">
+                        <div class="check">
+                            <input type="checkbox">
+                            <label>Sponsored Days</label>
+                        </div>
+                        <div class="check">
+                            <input type="checkbox">
+                            <label>Sponsored Posts</label>
+                        </div>
+                        <div class="check">
+                            <input type="checkbox">
+                            <label>Sponsored Video Posts</label>
+                        </div>
+                        <div class="check">
+                            <input type="checkbox">
+                            <label>Creative Guidence</label>
+                        </div>
+                        <div class="check">
+                            <input type="checkbox">
+                            <label>App Installs</label>
+                        </div>
+                        <div class="check">
+                            <input type="checkbox">
+                            <label>Something Else</label>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
