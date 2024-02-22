@@ -1,0 +1,17 @@
+{
+  "files.associations": {
+    "iostream": "cpp",
+    "forward_list": "cpp",
+    "list": "cpp",
+    "unordered_map": "cpp",
+    "unordered_set": "cpp",
+    "functional": "cpp",
+    "type_traits": "cpp",
+    "ostream": "cpp",
+    "array": "cpp",
+    "string": "cpp",
+    "string_view": "cpp",
+    "iosfwd": "cpp"
+  },
+  "C_Cpp.errorSquiggles": "enabled"
+}
