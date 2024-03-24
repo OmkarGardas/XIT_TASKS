@@ -35,6 +35,20 @@ const Crud = () => {
     },
   ];
 
+  const [formDetails, setFormDetails] = useState({
+    id: "",
+    Name: "",
+    Email: "",
+    PhoneNumber: "",
+  });
+
+  const [editFormDetails, setEditFormDetails] = useState({
+    id: "",
+    Name: "",
+    Email: "",
+    PhoneNumber: "",
+  });
+
   const [data, setData] = useState([]);
   useEffect(() => {
     setData(empdata);
@@ -50,7 +64,30 @@ const Crud = () => {
     }
   };
 
-  const handleUpdate = () => {};
+  const handleChange = (e) =>{
+    const {value, name} = e.target;
+    setFormDetails((prev)=>{
+      return{
+        ...prev,
+        [name]:value,
+      }
+    })
+  }
+
+  const handleEditChange = (e) => {
+    const {value, name} = e.target;
+    setEditFormDetails((prev) => {
+      return{
+        ...prev,
+        [name]:value,
+      }
+    })
+  }
+
+  const handleUpdate = (e) => {
+    e.preventDefault();
+    alert("Hello")
+  };
 
   return (
     <>
@@ -58,7 +95,7 @@ const Crud = () => {
         <h1>CRUD Operations</h1>
       </div>
       <hr />
-      <FormDetails title="Add User"/>
+      <FormDetails handleChange={handleChange} title="Add User" rest = {formDetails} handleUpdate={handleUpdate}/>
       <table className="table text-center my-3">
         <thead>
           <tr>
@@ -106,7 +143,7 @@ const Crud = () => {
           <Modal.Title>User Details</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-            <FormDetails title="Update"/>
+          <FormDetails title="Update" rest={editFormDetails} handleChange={handleEditChange} handleUpdate={handleUpdate}/>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
