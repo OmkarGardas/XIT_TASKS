@@ -1,9 +1,7 @@
-import React from "react";
-
 const FormDetails = ({ title, rest, handleChange, handleUpdate }) => {
   return (
     <>
-      <form onSubmit={handleUpdate}>
+      <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <input
             type="text"
@@ -36,7 +34,9 @@ const FormDetails = ({ title, rest, handleChange, handleUpdate }) => {
             onChange={handleChange}
           />
         </div>
-        <button className="btn btn-primary">{title}</button>
+        <button className="btn btn-primary" onClick={handleUpdate}>
+          {title}
+        </button>
       </form>
     </>
   );
